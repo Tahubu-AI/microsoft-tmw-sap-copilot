@@ -33,7 +33,7 @@ In this task, you will use the Azure portal to create and publish a new product 
 
 ## Learning resources
 
-[Create and publish a product](https://learn.microsoft.com/azure/api-management/api-management-howto-add-products)
+- [Create and publish a product](https://learn.microsoft.com/azure/api-management/api-management-howto-add-products)
 
 ## Key tasks
 
