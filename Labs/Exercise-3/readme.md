@@ -41,7 +41,7 @@ In this task, you will create an API in Azure API Management using the OpenAPI s
 
 2. [] Navigate to your Azure API Management instance.
 
-3. [] In the left menu, select **MCP Servers**, then select **Create MCP Server** > **Expose an API as an MCP server**.
+3. [] In the left menu, expand **APIs**, select **MCP Servers**, then select **Create MCP Server** > **Expose an API as an MCP server**.
 
     ![Screenshot of the API Management MCP Servers Create MCP server page.](./media/apim-create-mcp-server.png)
 
