@@ -31,7 +31,11 @@
 5. Select just a two or three GET endpoints to use as tools.
 6. Select Create.
 
-## Exercise 4: Test and use the MCP server (10 - 20 minutes)
+## Exercise 4: Manage Access to your MCP server (15 minutes)
+
+1. In APIM, create a product and subscription to lock down access to the MCP server API.
+
+## Exercise 5: Test and use the MCP server (10 - 20 minutes)
 
 1. Use MCP Inspector (Leave out if using Copilot Studio)
    1. Install NPX
@@ -41,7 +45,7 @@
    1. Connect to MCP server from VS Code
    2. Use VS Code and GitHub copilot (in agent mode) to issue natural language queries against the MCP server and SAP data.
 
-## Exercise 5: Create an agent (Copilot Studio or via code with Semantic Kernel) (30 minutes)
+## Exercise 6: Create an agent (Copilot Studio or via code with Semantic Kernel) (30 minutes)
 
 1. Create agent
 2. Use MCP server with agent
