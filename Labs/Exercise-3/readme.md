@@ -28,13 +28,7 @@ In this task, you will create an API in Azure API Management using the OpenAPI s
 ## Success criteria
 
 - The SAP API is exposed as an MCP server.
-- The following endpoints are exposed as tools in the MCP server (TODO: review this list and determine what they right endpoints are based on final scenario)
-  - Get entities from ProductSet
-  - Get entity from ProductSet by key
-  - Get entities from SalesOrderSet
-  - Get entity from SalesOrderSet by key
-  - Get entity from SalesOrderLineItemSet by key
-  - Get entity from VH_CategorySet by key
+- Select API endpoints are exposes as tools.
 
 ## Learning resources
 
