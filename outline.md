@@ -1,10 +1,10 @@
 # Lab outline
 
-## Task 1: Set up user account against SAP and all that is involved in that. (10 minutes)
+## Exercise 1: Set up user account against SAP and all that is involved in that. (10 minutes)
 
 1. Export OpenAI JSON file.
 
-## Task 2: Configure SAP API in Azure API Management (30 minutes)
+## Exercise 2: Configure SAP API in Azure API Management (30 minutes)
 
 1. Create API
    1. Import OpenAPI specification file (JSON)
@@ -22,7 +22,7 @@
    5. Test API in APIM UI.
       1. Make sure to use top 5 in test queries, as the UI seems to fail with a large amount of data.
 
-## Task 3: Create MCP Server from API in APIM (10 minutes)
+## Exercise 3: Create MCP Server from API in APIM (10 minutes)
 
 1. In APIM, select the MCP Server (Preview) item from the left-hand menu.
 2. Create a new server by selecting Expose an API as an MCP server
@@ -31,7 +31,7 @@
 5. Select just a two or three GET endpoints to use as tools.
 6. Select Create.
 
-## Task 4: Test and use the MCP server (10 - 20 minutes)
+## Exercise 4: Test and use the MCP server (10 - 20 minutes)
 
 1. Use MCP Inspector (Leave out if using Copilot Studio)
    1. Install NPX
@@ -41,7 +41,7 @@
    1. Connect to MCP server from VS Code
    2. Use VS Code and GitHub copilot (in agent mode) to issue natural language queries against the MCP server and SAP data.
 
-## Task 5: Create an agent (Copilot Studio or via code with Semantic Kernel) (30 minutes)
+## Exercise 5: Create an agent (Copilot Studio or via code with Semantic Kernel) (30 minutes)
 
 1. Create agent
 2. Use MCP server with agent
