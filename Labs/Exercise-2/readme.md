@@ -33,7 +33,7 @@ In this task, you will create an API in Azure API Management using the OpenAPI s
 
 ## Learning resources
 
-- [Create and publish an API in Azure API Management](https://learn.microsoft.com/azure/api-management/import-api-from-openapi)
+- [Create and publish an API in Azure API Management](https://learn.microsoft.com/azure/api-management/import-api-from-oas)
 
 ## Key tasks
 
@@ -87,7 +87,7 @@ Named values in Azure API Management allow you to store sensitive information, s
 
 ## Learning resources
 
-- [Use named values in Azure API Management](https://learn.microsoft.com/azure/api-management/api-management-named-values)
+- [Use named values in Azure API Management](https://learn.microsoft.com/azure/api-management/api-management-howto-properties?tabs=azure-portal#use-a-named-value)
 
 ## Key tasks
 
@@ -184,7 +184,7 @@ In this task, you will test the SAP API by making requests to its endpoints usin
 
 ## Learning resources
 
-- [Test an API in Azure API Management](https://learn.microsoft.com/azure/api-management/test-api)
+- [Test an API in Azure API Management](https://learn.microsoft.com/azure/api-management/import-api-from-oas?tabs=portal#test-the-new-api-in-the-portal)
 
 ## Key tasks
 
