@@ -151,8 +151,8 @@ Inbound policies in Azure API Management allow you to modify incoming requests b
 
 3. [] In the policy editor, enter the following policy to add the `authentication-basic` node using the named values you created earlier. This will set the `Authorization` header for incoming requests:
 
-> [!NOTE]
-> Make sure to replace the existing `<inbound>` section with the following code snippet.
+    > [!NOTE]
+    > Make sure to replace the existing `<inbound>` section with the following code snippet.
 
     ```xml
     <inbound>
@@ -198,8 +198,8 @@ In this task, you will test the SAP API by making requests to its endpoints usin
 
 3. [] In the **Parameters** section, set the `$top` parameter to `5` to limit the number of results returned, then select **Send** to make the request.
 
-> [!WARNING]
-> The SAP API can return a large amount of data, which may cause the test console to time out or fail. Limiting the results with the `$top` parameter helps prevent this issue.
+    > [!WARNING]
+    > The SAP API can return a large amount of data, which may cause the test console to time out or fail. Limiting the results with the `$top` parameter helps prevent this issue.
 
     ![The Parameters section is shown with the $top parameter set to 5 and the Send button highlighted.](media/apim-apis-test-tab-send-request.png)
 
