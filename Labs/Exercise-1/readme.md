@@ -218,7 +218,7 @@ In this task, copy the SAP Gateway Demo API metadata, transform it into the Open
 > [!WARNING]
 > If there is any non-XML text in the text box, delete it.
 
-    ![The OData to OpenAPI conversion tool with XML pasted is displayed.](media/odata-to-openapi-conversion-tool-xml-pasted.png)
+![The OData to OpenAPI conversion tool with XML pasted is displayed.](media/odata-to-openapi-conversion-tool-xml-pasted.png)
 
 4. [] Select the **Convert to OpenAPI3** button, then select **Download** to download the OpenAPI file.
 
