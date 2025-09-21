@@ -52,7 +52,7 @@ In this task, you will use the Azure portal to create and publish a new product 
     - [] Check the box next to **Published**.
     - [] Ensure the **Requires subscription** box is checked.
     - [] Under **APIs**, select `+` and choose the **SAP** API from the list.
-    - Select **Create**.
+    - [] Select **Create**.
 
     ![Screenshot of the Add product dialog with the provided settings entered into the form.](./media/apim-products-add-product.png)
 
@@ -93,6 +93,6 @@ In this task, you will create a new subcription in API Management that is scoped
     - [] Enter "SAP" into the **Display Name** field.
     - [] Select "Product" for the **Scope**.
     - [] Select "SAP" for the **Product**.
-    - Select **Create**.
+    - [] Select **Create**.
 
     ![The New subscription pane is displayed with the specified values entered into each field.](./media/apim-new-subscription.png)
