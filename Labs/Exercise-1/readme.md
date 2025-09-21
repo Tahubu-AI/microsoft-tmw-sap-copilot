@@ -90,8 +90,8 @@ In this task, you create an account so that you can access SAP resources.
 
     SAP Account activation link: @lab.TextBox(SAPActivationLink)
 
-> [!IMPORTANT]
-> After pasting the value into the text field, select the **Tab** key or select any element outside of the text field. This ensures that the value is saved for use later in the lab.
+    > [!WARNING]
+    > After pasting the value into the text field, select the **Tab** key or select any element outside of the text field. This ensures that the value is saved for use later in the lab.
 
 12. [] Return to the lab environment. Open a new browser window and go to `@lab.Variable(SAPActivationLink)`.
 
