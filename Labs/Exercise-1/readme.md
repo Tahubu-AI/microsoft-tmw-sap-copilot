@@ -90,8 +90,8 @@ In this task, you create an account so that you can access SAP resources.
 
     SAP Account activation link: @lab.TextBox(SAPActivationLink)
 
-    > [!ALERT]
-    > After pasting the value into the text field, select the **Tab** key or select any element outside of the text field. This ensures that the value is saved for use later in the lab.
+> [!ALERT]
+> After pasting the value into the text field, select the **Tab** key or select any element outside of the text field. This ensures that the value is saved for use later in the lab.
 
 12. [] Return to the lab environment. Open a new browser window and go to `@lab.Variable(SAPActivationLink)`.
 
@@ -120,7 +120,7 @@ In this task, you create an account so that you can access SAP resources.
 
 # Task 02: Create an account for the SAP Gateway Demo system
 
-##Introduction
+## Introduction
 
 Now that you can access SAP resources, you must create an account to access demo data.
 
@@ -158,8 +158,8 @@ In this task, you sign in to the SAP developer site and create an account. The a
 
     ![The temporary password is displayed.](media/sap-gateway-demo-temporary-password.png)
 
-    > [!Note]
-    > The SAP system will send you an email that includes the Server URI, username, and initial password.
+> [!NOTE]
+> The SAP system will send you an email that includes the Server URI, username, and initial password.
 
 7. [] Open a new browser window and go to `https://sapes5.sapdevcenter.com/sap/bc/gui/sap/its/webgui`
 
@@ -215,8 +215,8 @@ In this task, copy the SAP Gateway Demo API metadata, transform it into the Open
 
 3. [] In a new browser window, go to `https://convert.odata-openapi.net/`. Paste the XML text into the **Manual Input of OData Definition (XML)** text box.
 
-    > [!WARNING]
-    > If there is any non-XML text in the text box, delete it.
+> [!WARNING]
+> If there is any non-XML text in the text box, delete it.
 
     ![The OData to OpenAPI conversion tool with XML pasted is displayed.](media/odata-to-openapi-conversion-tool-xml-pasted.png)
 
@@ -226,5 +226,5 @@ In this task, copy the SAP Gateway Demo API metadata, transform it into the Open
 
 5. [] Make note of the location where the file is saved. You use this file in later exercises.
 
-    > [!NOTE]
-    > The file is named `openapi-spec.json` by default. You can rename the file if you want.
+> [!NOTE]
+> The file is named `openapi-spec.json` by default. You can rename the file if you want.
