@@ -56,6 +56,8 @@ In this task, you will use the Azure portal to create and publish a new product 
 
     ![Screenshot of the Add product dialog with the provided settings entered into the form.](./media/apim-products-add-product.png)
 
+===
+
 # Task 02: Create a subscription in API Management
 
 ## Introduction
