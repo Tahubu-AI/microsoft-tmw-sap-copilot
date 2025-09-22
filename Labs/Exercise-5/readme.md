@@ -117,4 +117,43 @@ In this task, you will use `Visual Studio Code` as an MCP Client to allow the Gi
 
 ## Key Tasks
 
+1- [] Open Visual Studio Code and create a new empty folder and open that folder in the IDE.  You can call the folder any name.
+
+2- [] `CTRL-SHIFT-P` to open the Command Plalette.  Find the comand for `MCP: Add Server...`
+
+3- [] Use the `HTTP` transport option
+
+4- [] Paste the URL of your MCP server that we created in API Management resource.  It looks something like this `https://apim-mcp-xxxxxxxx.azure-api.net/SAP-mcp/mcp`
+
+5- [] Give your Visual Studio Code MCP Server reference a name, something like `SAP-MCP`
+
+6- [] Finally choose Workspace insatead of Global to create the `mcp.json` file locally to the folder you created earlier.
+
+7- [] Visual Studio Code will present a dialog to TRUST the MCP server, click on Trust.
+
+![VS Code MCP Server](./media/vscode-mcp-server.png)
+
+8- [] Now manually enter an authentication key to the `mcp.json` file by adding a key called `headers` which include a sub key called `ocp-apim-subscription-key` and its value is the same we used from the MCP Inspector exercise.  Or you can just get it from the API Management Resource in the Azure Portal under `Subscriptions`.  click on the `start` helper above the Server name in the `mcp.json` fiel to start the MCP server as shown below.
+
+![OCP APIM-Subscription-Key](./media/vscode-ocp-sub-key.png)
+
+9- [] Open the Chat window of the GitHub Copilot in Visual Studio Code, make sure you are in `Agent` mode and pick whatever LLM you would like to experiemnt with.
+
+![Copilot Chat window](./media/vscode-chat-agent.png)
+
+10- [] Ask questions about the SAP products, categories and orders and see if Copilot is able to figure out that your MCP server should be called and formulate an input to get a response before sending to the LLM.  For example start by asking: `What are the last 5 orders by Asia High tech`.  You will notice that the LLM will correctly pick the tool `getEntitiesFromSalesOrderSet` and will ask permission for you to allow the LLM to call that tool.
+
+![Tool Selection and permission](./media/copilot-first%20question.png)
+
+11- [] After allow the function call to proceed, you will be presented with the correct last 5 orderes for the company `Asia High Tech`
+
+![First Response](./media/copilot-first-response.png)
+
+12- [] Continue with the conversation and ask for more information about the 3rd order # `0500009829` by asking `Give me more information about order 0500009829` and see the response and the new tool that was chosen to get the order by key
+
+![Second question](./media/copilot-second-question.png)
+
+The power of your SAP system at the fingertips of your Business Analysts.
+
+
 
