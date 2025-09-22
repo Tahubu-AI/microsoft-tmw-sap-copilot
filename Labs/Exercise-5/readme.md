@@ -36,6 +36,66 @@ In this task, you will execute the `npx` command to launch the MCP Inspector, an
 
 ## Key Tasks
 
+1- [] Make sure `Node.js` is installed on the machine. if it is not installed, download it from the official [nodejs.org](https://nodejs.og) web site using a Windows Installer for the LTS (Long Term Support).  The install will maker sure that `node`, `npm` and `npx` all work locally on the machine.  To verify run the following commands from the command to make sure they are all installed and working:
+
+```bash
+    node -v
+    npm -v
+    npx -v
+```
+
+2- [] Open your API Management resource in the Azure portal and pick the MCP Servers under APIs in the left panel
+
+![APIM MCP Servers in the Left Panel](./media/apim-mcp-servers-panel.png)
+
+3- [] Choose your MCP Server that you have already configured and take note of the MCP server URL ( copy it to the clipboard) we are going to use it in the next steps.
+
+![SAP MCP URL Endpoint](./media/apim-sap-mcp-endpoint.png)
+
+4- [] Run the MCP Inspector directly on the machine without requiring installation by executing the following command:
+
+```bash
+    npx @modelcontextprotocol/inspector
+```
+
+5- [] Your default browser will open the MCP Inspector locally on your machine
+
+![MCP Inspector](./media/mcp-inspector-setup.png)
+
+6- [] Pick `Streamable HTTP` from the Transport Type drop down
+
+7- [] Paste the URL you copied from step 3 above in the URL text box and click `connect`
+
+8- [] Once you connect successfully, click on `List Tools` in the Tools Window section
+
+![MCP List Tools](./media/mcp-inspector-list-tools.png)
+
+9- [] Click on the `getEntitiesFromProductSet` tool, set the `$top` paranmeter to `5`, the `$format` parameter to `json` and click on the `Run Tool` button at the bottom
+
+10- Notice the error 401 in the response, as access is denied. The reason for that error is the fact that we set a secure subscription on the MCP Server in the API Management resource.
+
+![MCP Inspector 401 error](./media/mcp-inspector-error.png)
+
+11- Head back over to the API Management resource in the Azure Portal and open the APIs panel on the Settings page to copy the `Header Name` we will need in the inspector.  It is called `Ocp-Apim-Subscription-Key`
+
+![APIM Header Name](./media/apim-header-name.png)
+
+12- Now head to the `Subscription` panel in the API management portal resource, click on the elipsis next to your subscription name to `Show` the keys and copy the primary key to the clipboard.
+
+![Subscription Key](./media/apim-subscription-key.png)
+
+13- Now we can head back to the MCP Inspector and add the authentication properly. Click on `+ Add` for Custom headers under Authentication and add a header called `Ocp-Apim-Subscription-Key` and the value is what you saved as a the preimary key from the previous step.
+
+    > [!IMPORTANT]
+    > You have to `Disconnect` and then `reconnect` for the change to take effect in the MCP Inspector.
+
+![MCP Inspector Authentication](./media/mcp-inspector-authentication.png)
+
+14- Run the previous test again with $top 5 and $format json and you should see a successful execution
+
+![MCP Inspector Success](./media/mcp-inspector-success.png)
+
+
 # Task 02: Test the MCP Server using Visual Studio Code
 
 ## Introduction
