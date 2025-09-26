@@ -152,4 +152,4 @@ In this task, you will use `Visual Studio Code` as an MCP Client to allow the Gi
 
     ![Second question](./media/copilot-second-question.png)
 
-The power of your SAP system at the fingertips of your Business Analysts.
+The power of your SAP system at the fingertips of your Business Analysts.  
