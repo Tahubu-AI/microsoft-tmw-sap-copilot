@@ -1,1 +1,3 @@
 Contoso Inc. is an established manufacturer planning to enable its `business analysts` to use Natural Language to retrieve information from their SAP System without requiring technical knowledge, coding, or SQL queries. As part of their plan, Contoso wants to deploy a secure Model Context Protocol (MCP) server based on its SAP Entities through its APIs.
+
+In this lab, you map SAP APIs and bind them to a hosted MCP server in Azure API Management (APIM). You then test the MCP server with the MCP inspector tool and configure GitHub Copilot large language models (LLMs) to use the MCP server tools through the agent chat interface in Visual Studio Code.
